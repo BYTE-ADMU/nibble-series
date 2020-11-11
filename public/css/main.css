@@ -302,7 +302,7 @@ p {
   align-content: center;
 }
 
-.workshop-info h1 {
+.workshop-info h1, .nibbler-content h1 {
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -312,7 +312,7 @@ p {
   color: var(--primary-color);
 }
 
-.workshop-info p {
+.workshop-info p, .nibbler-content p {
   font-family: sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -334,6 +334,9 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-image: url("../static/backgrounds/culminating.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .culmination-wrapper {
@@ -377,7 +380,7 @@ p {
 .munchies-landing {
   margin-top: 24px;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -388,7 +391,7 @@ p {
 .munchies-line {
   margin: 56px 0;
   display: block;
-  width: 80%;
+  width: 75%;
   height: 2px;
   background-color: var(--tertiary-color);
 }
@@ -424,9 +427,9 @@ p {
 }
 
 .munchies-container {
-  width: 80%;
+  width: 70%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
 }
@@ -480,6 +483,109 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
+  color: var(--primary-color);
+}
+
+/* PERKS */
+.nibbler-landing {
+  width: 100vw;
+  height: 100%;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.nibbler-container, .nibbler-container-2 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.nibbler-container { align-items: flex-start; }
+.nibbler-container-2 { align-items: flex-end; }
+
+.nibbler-header {
+  font-family: sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.nibbler-wrapper {
+  margin: 40px 0;
+  width: 70%;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.nibbler-img {
+  width: 360px;
+  height: 100%;
+  outline: 2px dotted black;
+}
+
+.nibbler-content {
+  width: 560px;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+/* SIGNUP */
+.signup-landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.signup-container {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: var(--placeholder-color);
+  border-radius: 24px;
+  margin-bottom: 64px;
+}
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.signup-wrapper h1 {
+  font-family: sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.signup-wrapper p {
+  margin: 24px 0 56px 0;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 400;
   color: var(--primary-color);
 }
 
