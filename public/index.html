@@ -8,7 +8,7 @@
   <title>Nibble Series 2020</title>
 </head>
 <body>
-
+  <main>
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-menu">
@@ -44,12 +44,32 @@
             <div class="workshop-time">3PM</div>
             <div class="workshop-title">Workshop Title: Title of the Workshop Here</div>
             
-            <div class="workshop-speaker">
+            <div class="workshop-speaker" id="workshopSpeakerName">
+
+              <div class="workshop-speaker-modal" id="speakerNameModal">
+                <div class="modal-content">
+                  <div class="modal-speaker">
+                    <img src="" alt=""> <!-- Insert Speaker Image Here -->
+                    <div class="modal-speaker-info">
+                      <h1>Kate Rustia</h1>
+                      <p>UX Designer at Globe Telecom</p>
+                    </div>
+                  </div>
+                  <div class="modal-bio">
+                    <h1>Bio</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Neque volutpat ac tincidunt vitae semper quis lectus.</p>
+                  </div>
+                </div>
+              </div>
+
               <img src="" alt=""> <!-- Insert Speaker Image Here -->
+
               <div class="workshop-speaker-info">
                 <h1>Kate Rustia</h1>
                 <p>UX Designer at Globe Telecom</p>
               </div>
+
             </div>
             
             <div class="workshop-info">
@@ -265,5 +285,8 @@
       </div>
     </div>
   </footer>
+  </main>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>

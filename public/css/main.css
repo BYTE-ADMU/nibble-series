@@ -262,6 +262,56 @@ p {
   margin: 8px 0 40px 0;
 }
 
+.workshop-speaker-modal {
+  display: none;
+  overflow: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.modal-content {
+  width: 600px;
+  height: 640px;
+  background-color: white;
+  margin: 40% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #FFF;
+  animation-name: modalOpen;
+  animation-duration: 0.75s;
+}
+
+.modal-speaker {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  margin: 8px 0 40px 0;
+}
+
+.modal-content .modal-speaker img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--placeholder-color);
+}
+
+.modal-bio {
+  width: 80%;
+}
+
 .workshop-speaker img {
   width: 72px;
   height: 72px;
@@ -269,7 +319,7 @@ p {
   background-color: var(--placeholder-color);
 }
 
-.workshop-speaker-info {
+.workshop-speaker-info, .modal-speaker-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -278,7 +328,7 @@ p {
   margin: 0 24px;
 }
 
-.workshop-speaker-info h1 {
+.workshop-speaker-info h1, .modal-speaker-info h1 {
   font-family: sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -286,7 +336,7 @@ p {
   color: var(--primary-color);
 }
 
-.workshop-speaker-info p {
+.workshop-speaker-info p, .modal-speaker-info p {
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -294,7 +344,7 @@ p {
   color: var(--primary-color);
 }
 
-.workshop-info {
+.workshop-info, .modal-bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,7 +352,7 @@ p {
   align-content: center;
 }
 
-.workshop-info h1, .nibbler-content h1 {
+.workshop-info h1, .nibbler-content h1, .modal-bio h1 {
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -312,7 +362,7 @@ p {
   color: var(--primary-color);
 }
 
-.workshop-info p, .nibbler-content p {
+.workshop-info p, .nibbler-content p, .modal-bio p {
   font-family: sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -668,6 +718,24 @@ p {
   background-color: var(--placeholder-color);
 }
 
+/* ANIMATIONS */
+@keyframes modalOpen {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 
 /*
  * Remove text-shadow in selection highlight:
