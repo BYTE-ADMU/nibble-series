@@ -1,8 +1,8 @@
 // Get modal element
-var modal = document.getElementById('modalSpeakerName'); 
+var modal = document.getElementById('modalAlbertYulmo'); 
 
 // Get open modal button or div
-var modalOpen = document.getElementById('workshopSpeakerName');
+var modalOpen = document.getElementById('workshopAlbertYulmo');
 
 // Listen for click
 modalOpen.addEventListener('click', openModal);
