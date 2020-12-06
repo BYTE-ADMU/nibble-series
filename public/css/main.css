@@ -12,6 +12,146 @@
    ========================================================================== */
 
 /* IMPORT FONTS */
+@font-face {
+  font-family: 'Objectivity Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Regular'), url('../static/fonts/Objectivity-Regular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Regular Slanted';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Regular Slanted'), url('../static/fonts/Objectivity-RegularSlanted.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Thin'), url('../static/fonts/Objectivity-Thin.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Thin Slanted';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Thin Slanted'), url('../static/fonts/Objectivity-ThinSlanted.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Light'), url('../static/fonts/Objectivity-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Light Slanted';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Light Slanted'), url('../static/fonts/Objectivity-LightSlanted.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Medium'), url('../static/fonts/Objectivity-Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Medium Slanted';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Medium Slanted'), url('../static/fonts/Objectivity-MediumSlanted.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Bold'), url('../static/fonts/Objectivity-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Bold Slanted';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Bold Slanted'), url('../static/fonts/Objectivity-BoldSlanted.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Extra Bold'), url('../static/fonts/Objectivity-ExtraBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Extra Bold Slanted';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Extra Bold Slanted'), url('../static/fonts/Objectivity-ExtraBoldSlanted.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Black'), url('../static/fonts/Objectivity-Black.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Black Slanted';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Black Slanted'), url('../static/fonts/Objectivity-BlackSlanted.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Super';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Super'), url('../static/fonts/Objectivity-Super.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Objectivity Super Slanted';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Objectivity Super Slanted'), url('../static/fonts/Objectivity-SuperSlanted.woff') format('woff');
+  }
+
+  @font-face {
+  font-family: 'HK Grotesk Medium';
+  font-weight: normal;
+  font-style: normal;  
+  src: url('../static/fonts/hkgrotesk-medium-webfont.woff2') format('woff2'), url('../static/fonts/hkgrotesk-medium-webfont.woff') format('woff');
+  }
+
+  @font-face {
+  font-family: 'HK Grotesk Medium Legacy';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../static/fonts/hkgrotesk-mediumlegacy-webfont.woff2') format('woff2'), url('../static/fonts/hkgrotesk-mediumlegacy-webfont.woff') format('woff');
+  }
 
 * {
   box-sizing: border-box;
@@ -28,15 +168,15 @@
 }
 
 h1 {
-
+  font-family: 'Objectivity Bold', sans-serif;
 }
 
 h2 {
-
+  font-family: 'Objectivity Medium', sans-serif;
 }
 
 p {
-
+  font-family: 'HK Grotesk Medium', sans-serif;
 }
 
 .main { 
@@ -83,7 +223,7 @@ p {
 .nav-link {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold';
   font-size: 16px;
   font-weight: 700;
   color: white;
@@ -102,7 +242,7 @@ p {
 }
 
 .hero-content {
-  width: 45%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -120,7 +260,7 @@ p {
 
 .hero-header {
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 48px;
   font-weight: 600;
   color: var(--primary-color);
@@ -129,7 +269,7 @@ p {
 
 .hero-sub {
   margin: 16px 0;
-  font-family: sans-serif;
+  font-family: 'Objectivity Medium';
   font-size: 32px;
   font-weight: 500;
   color: var(--primary-color);
@@ -137,7 +277,7 @@ p {
 
 .hero-body {
   margin: 8px 0;
-  font-family: sans-serif;
+  font-family: 'HK Grotesk Medium';
   font-size: 24px;
   color: var(--primary-color);
   line-height: 32px;
@@ -185,7 +325,7 @@ p {
 
 .workshop-day h1 {
   margin-bottom: 8px;
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -194,7 +334,7 @@ p {
 }
 
 .workshop-day h2 {
-  font-family: sans-serif;
+  font-family: 'Objectivity Medium', sans-serif;
   font-size: 28px;
   font-weight: 500;
   color: var(--primary-color);
@@ -233,7 +373,8 @@ p {
   appearance: button;
   background-color: var(--secondary-color);
   margin: 8px 0;
-  width: 104px;
+  padding: 4px 0 0 0;
+  width: 120px;
   height: 40px;
   border-radius: 8px;
   display: flex;
@@ -244,17 +385,15 @@ p {
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 18px;
-  font-weight: 700;
+  font-family: 'Objectivity Bold', sans-serif;
+  font-size: 16px;
   color: white;
 }
 
 .workshop-title {
-  margin: 12px 0;
-  font-family: sans-serif;
+  margin: 32px 0 16px 0;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 32px;
-  font-weight: 700;
   color: var(--primary-color);
 }
 
@@ -310,7 +449,6 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: var(--placeholder-color);
 }
 
 .modal-bio {
@@ -321,7 +459,6 @@ p {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background-color: var(--placeholder-color);
 }
 
 .workshop-speaker-info, .modal-speaker-info {
@@ -334,7 +471,7 @@ p {
 }
 
 .workshop-speaker-info h1, .modal-speaker-info h1 {
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -342,7 +479,7 @@ p {
 }
 
 .workshop-speaker-info p, .modal-speaker-info p {
-  font-family: sans-serif;
+  font-family: 'Objectivity Regular', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -358,7 +495,7 @@ p {
 }
 
 .workshop-info h1, .nibbler-content h1, .modal-bio h1 {
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 36px;
@@ -368,9 +505,8 @@ p {
 }
 
 .workshop-info p, .nibbler-content p, .modal-bio p {
-  font-family: sans-serif;
+  font-family: 'HK Grotesk Medium', sans-serif;
   font-size: 18px;
-  font-weight: 500;
   line-height: 24px;
   color: var(--primary-color);
 }
@@ -428,7 +564,7 @@ p {
 
 .culmination-talk {
   margin: 0 20px;
-  font-family: sans-serif;
+  font-family: 'Objectivity Medium', sans-serif;
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
@@ -468,7 +604,7 @@ p {
 }
 
 .munchies-header h1 {
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -479,7 +615,7 @@ p {
 
 .munchies-header p {
   width: 800px;
-  font-family: sans-serif;
+  font-family: 'HK Grotesk Medium', sans-serif;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
@@ -522,9 +658,8 @@ p {
 }
 
 .munchies-content h2 {
-  font-family: sans-serif;
+  font-family: 'Objectivity Medium', sans-serif;
   font-size: 12px;
-  font-weight: 500;
   letter-spacing: 0.15em;
   line-height: 24px;
   text-transform: uppercase;
@@ -532,17 +667,15 @@ p {
 }
 
 .munchies-content h1 {
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
+  line-height: 40px;
   color: var(--primary-color);
 }
 
 .munchies-content p {
-  font-family: sans-serif;
+  font-family: 'Objectivity Regular', sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
   color: var(--primary-color);
 }
@@ -572,9 +705,8 @@ p {
 .nibbler-container-2 { align-items: flex-end; }
 
 .nibbler-header {
-  font-family: sans-serif;
-  font-size: 48px;
-  font-weight: 700;
+  font-family: 'Objectivity Bold', sans-serif;
+  font-size: 56px;
   line-height: 64px;
   color: var(--primary-color);
   margin-bottom: 16px;
@@ -639,9 +771,9 @@ p {
 
 .signup-wrapper h1 {
   margin: 24px 0 56px 0;
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 72px;
-  font-weight: 700;
+  line-height: 88px;
   text-align: center;
   color: white;
 }
@@ -654,6 +786,7 @@ p {
   width: 400px;
   height: 56px;
   border-radius: 8px;
+  padding: 4px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -665,7 +798,7 @@ p {
 .sign-up-link {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: 'Objectivity Bold', sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: white;
