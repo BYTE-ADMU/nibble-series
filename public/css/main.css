@@ -909,31 +909,24 @@ p {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+.nav-btn, .workshop-time, .sign-up-btn {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
   .nav-btn, .workshop-time {
     width: 96px;
     height: 40px;
-  }
-
-  .workshop-time {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    background-color: var(--secondary-color);
-    padding: 4px 0 0 0;
-    width: 112px;
-    height: 40px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Objectivity Bold', sans-serif;
-    font-size: 16px;
-    color: white;
   }
 
   .nav-link, .sign-up-link, .workshop-time {
