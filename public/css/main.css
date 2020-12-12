@@ -163,8 +163,8 @@
   /* COLORS */
   --primary-color: #331B25;
   --secondary-color: #E45B2F;
-  --tertiary-color: #D8B38F;
-  --placeholder-color: #FFB791;
+  --tertiary-color: #FF7E34;
+  --line-color: #D8B38F;
 }
 
 h1 {
@@ -179,9 +179,8 @@ p {
   font-family: 'HK Grotesk Medium', sans-serif;
 }
 
-.main { 
+.body { 
   background-color: #FCF8F3;
-  
 }
 
 /* NAVBAR */
@@ -212,6 +211,7 @@ p {
   width: 136px;
   height: 48px;
   border-radius: 8px;
+  padding-top: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,6 +229,16 @@ p {
   color: white;
 }
 
+/* LANDING HERO VECTOR */
+.hero-vector {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../static/backgrounds/landing.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* LANDING HERO */
 .hero-landing {
@@ -238,7 +248,6 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
-  
 }
 
 .hero-content {
@@ -255,7 +264,6 @@ p {
   margin: 0 0 24px 0;
   width: 600px;
   height: 200px;
-  background: transparent;
 }
 
 .hero-header {
@@ -264,7 +272,7 @@ p {
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   letter-spacing: 0.12em;
 }
 
@@ -291,7 +299,7 @@ p {
   display: block;
   width: 4px;
   height: 128px;
-  background-color: var(--tertiary-color);
+  background-color: var(--line-color);
 }
 
 
@@ -325,6 +333,10 @@ p {
   margin: 0px 0 -32px 0;
 }
 
+.workshop-day-2 {
+  margin-top: 148px;
+}
+
 .workshop-day h1 {
   margin-bottom: 8px;
   font-family: 'Objectivity Bold', sans-serif;
@@ -332,12 +344,12 @@ p {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .workshop-day h2 {
   font-family: 'Objectivity Medium', sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 500;
   color: var(--primary-color);
 }
@@ -376,7 +388,7 @@ p {
   background-color: var(--secondary-color);
   margin: 8px 0;
   padding: 4px 0 0 0;
-  width: 120px;
+  width: 136px;
   height: 40px;
   border-radius: 8px;
   display: flex;
@@ -396,7 +408,7 @@ p {
   margin: 32px 0 16px 0;
   font-family: 'Objectivity Bold', sans-serif;
   font-size: 32px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .workshop-speaker {
@@ -424,8 +436,8 @@ p {
 }
 
 .modal-content {
-  width: 600px;
-  height: 640px;
+  width: 800px;
+  height: 400px;
   background-color: white;
   margin: 40% auto;
   display: flex;
@@ -441,15 +453,15 @@ p {
 .modal-speaker {
   width: 80%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   align-content: center;
-  margin: 8px 0 40px 0;
+  margin: 8px 0 24px 0;
 }
 
 .modal-content .modal-speaker img {
-  width: 200px;
-  height: 200px;
+  width: 104px;
+  height: 104px;
   border-radius: 50%;
 }
 
@@ -503,7 +515,7 @@ p {
   line-height: 36px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .workshop-info p, .nibbler-content p, .modal-bio p {
@@ -574,6 +586,11 @@ p {
   color: var(--secondary-color);
 }
 
+.culmination-image {
+  display: none;
+  background-image: url('../static/backgrounds/culminating-mobile.png')
+}
+
 
 /* MUNCHIES */
 .munchies-landing {
@@ -592,7 +609,7 @@ p {
   display: block;
   width: 75%;
   height: 2px;
-  background-color: var(--tertiary-color);
+  background-color: var(--line-color);
 }
 
 .munchies-header {
@@ -612,7 +629,7 @@ p {
   letter-spacing: 0.2em;
   line-height: 56px;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .munchies-header p {
@@ -646,9 +663,12 @@ p {
 .munchies-image {
   width: 100%;
   height: 352px;
-  background-color: var(--placeholder-color);
+  background-color: #FFEEE6;
   margin-bottom: 8px;
 }
+
+#munchies-hacker { background-image: url('../static/images/machine-learning.png'); }
+#munchies-hipster { background-image: url('../static/images/ux.png'); }
 
 .munchies-content {
   width: 100%;
@@ -665,7 +685,7 @@ p {
   letter-spacing: 0.15em;
   line-height: 24px;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .munchies-content h1 {
@@ -682,7 +702,7 @@ p {
   color: var(--primary-color);
 }
 
-/* PERKS */
+/* PERKS
 .nibbler-landing {
   width: 100vw;
   height: 100%;
@@ -738,29 +758,30 @@ p {
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-}
+} */
 
 /* SIGNUP */
 .signup-landing {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
-  justify-content: center;
+  justify-content: cover;
   align-items: center;
   align-content: center;
-  
+  background-image: url('../static/backgrounds/sign-up.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px 24px 0 0;
 }
 
 .signup-container {
-  width: 75%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: var(--placeholder-color);
-  border-radius: 24px;
-  margin-bottom: 64px;
 }
 
 .signup-wrapper {
@@ -809,7 +830,7 @@ p {
 /* FOOTER */
 .footer {
   width: 100vw;
-  height: 600px;
+  height: 240px;
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
@@ -819,16 +840,7 @@ p {
 }
 
 .footer-container {
-  width: 80%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.footer-wrapper {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -837,44 +849,32 @@ p {
 }
 
 .footer-content {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 60%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   align-content: center;
 }
 
 .footer-content h1 {
+  flex-basis: 50%;
   text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  font-family: 'Objectivity Medium', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   color: white;
   letter-spacing: 0.15em;
 }
 
-.footer-content p {
-  font-family: sans-serif;
-  font-size: 16px;
-  color: white;
-}
-
-.footer-content img {
-  margin: 0px 0px 24px 0px;
-  width: 120px;
-  height: 88px;
-  background-color: var(--placeholder-color);
-}
-
 .footer-partners {
+  flex-basis: 50%;
   margin: 16px 0;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-content: center;
   align-items: center;
 }
@@ -882,8 +882,7 @@ p {
 .footer-partners img {
   margin: 8px 24px 8px 0px;
   width: 120px;
-  height: 88px;
-  background-color: var(--placeholder-color);
+  height: 108px;
 }
 
 /* ANIMATIONS */
@@ -906,7 +905,297 @@ p {
 }
 
 /* RESPONSIVENESS */
-/* @media */
+/* Mobile first queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-btn, .workshop-time {
+    width: 96px;
+    height: 40px;
+  }
+
+  .workshop-time {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: var(--secondary-color);
+    padding: 4px 0 0 0;
+    width: 112px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Objectivity Bold', sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+
+  .nav-link, .sign-up-link, .workshop-time {
+    font-size: 14px;
+  }
+  
+  .hero-vector {
+    background-image: url('../static/backgrounds/landing-mobile.png');
+    background-size: contain;
+    top: -35%;
+    left: -20%;
+  }
+
+  .hero-landing {
+    height: 65vh;
+  }
+
+  .hero-content {
+    width: 85%;
+  }
+
+  .hero-logo {
+    margin: 0 0 12px 0;
+  }
+
+  .hero-content img {
+    width: 360px;
+    height: 120px
+  }
+
+  .hero-header {
+    font-size: 24px;
+  }
+  
+  .hero-sub {
+    font-size: 18px;
+  }
+  
+  .hero-body {
+    font-size: 16px;
+    line-height: 16px;  
+  }
+
+  .hero-line {
+    width: 3px;
+    height: 96px;
+  }
+
+  .workshop-day h1 { 
+    font-size: 24px; 
+  }
+  
+  .workshop-day h2 {
+    font-size: 18px;
+  }
+
+  .workshop-wrapper {
+    flex-direction: column;
+    height: 60vh;
+  }
+
+  .workshop-content {
+    flex-basis: 80%;
+  }
+  
+  .workshop-content-component {
+    width: 320px;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: center;
+  }
+
+  .hipster-mobile {
+    align-items: flex-end;
+  }
+  
+  .hipster-mobile .workshop-info {
+    align-items: flex-end;
+  }
+
+  .hipster-mobile .workshop-info p {
+    text-align: right;
+  }
+
+  .workshop-title {
+    margin: 16px 0;
+    font-size: 24px;
+  }
+
+  .workshop-speaker {
+    margin: 0 0 24px 0;
+  }
+  
+  .workshop-speaker img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .workshop-speaker-info {
+    margin: 0 12px;
+  }
+
+  .workshop-speaker-info h1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .workshop-speaker-info p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .workshop-info h1 {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .workshop-info p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .workshop-image {
+    position: absolute;
+    flex-basis: 40%;
+    width: 160px;
+    height: 180px;
+  }
+
+  .hacker-workshop { 
+    background-image: url("../static/backgrounds/hacker-workshop-mobile.png");
+    right: 0%;
+    transform: translate(0%, -75%); 
+  }
+  
+  .hipster-workshop { 
+    background-image: url("../static/backgrounds/hipster-workshop-mobile.png");
+    left: 0%;
+    transform: translate(0%, -75%);  
+  }
+  
+  .hustler-workshop { 
+    background-image: url("../static/backgrounds/hustler-workshop-mobile.png");
+    right: 0%;
+    transform: translate(0%, -75%);  
+  }
+
+  .workshop-day-2 {
+    margin: 32px 0 16px 0;
+  }
+
+  .culmination-talk {
+    margin: 0 12px;
+    font-size: 12px;
+  }
+
+  .culmination-container {
+    background: transparent;
+    height: 40vh;
+    width: 320px;
+  }
+
+  .culmination-image {
+    display: flex;
+    width: 104px;
+    height: 164px;
+  }
+
+  .munchies-landing {
+    margin-top: 24px;
+  }
+
+  .munchies-line {
+    width: 90%;
+  }
+
+  .munchies-header {
+    width: 90%;
+    margin-bottom: 0;
+  }
+  
+  .munchies-header h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .munchies-header p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  } 
+  
+  .munchies-container {
+    flex-direction: column;
+  }
+
+  .munchies-wrapper {
+    margin: 32px 0;
+  }
+
+  .signup-landing {
+    background-image: url('../static/backgrounds/sign-up-mobile.png');
+    height: 65vh;
+  }
+  
+  .signup-wrapper {
+    width: 90%;
+  }
+  
+  .signup-wrapper h1 {
+    margin-left: -40px;
+    width: 80%;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 48px;
+    line-height: 52px;
+  }
+  
+  .sign-up-btn {
+    width: 200px;
+    height: 40px;
+  }
+
+  .sign-up-link {
+    padding: 2px 0 0 0;
+    font-size: 16px;
+  }
+
+  .footer {
+    height: 120px;
+  }
+  
+  .footer-content h1 {
+    font-size: 10px;
+  }
+  
+  .footer-partners img {
+    margin: 8px 16px 8px 0px;
+    width: 48px;
+    height: 48px;
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
 
 /*
  * Remove text-shadow in selection highlight:
