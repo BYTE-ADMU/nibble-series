@@ -221,6 +221,7 @@ p {
 }
 
 .nav-link {
+  z-index: 1;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Objectivity Bold';
@@ -793,6 +794,7 @@ p {
 }
 
 .signup-wrapper h1 {
+  width: 60%;
   margin: 24px 0 56px 0;
   font-family: 'Objectivity Bold', sans-serif;
   font-size: 72px;
@@ -809,7 +811,7 @@ p {
   width: 400px;
   height: 56px;
   border-radius: 8px;
-  padding: 4px 0 0 0;
+  padding: 8px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
