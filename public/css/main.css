@@ -1025,27 +1025,33 @@ p {
     width: 48px;
     height: 48px;
   }
+  
+  .modal-content .modal-speaker img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
 
-  .workshop-speaker-info {
+  .workshop-speaker-info, .modal-speaker-info {
     margin: 0 12px;
   }
 
-  .workshop-speaker-info h1 {
+  .workshop-speaker-info h1, .modal-speaker-info h1 {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .workshop-speaker-info p {
+  .workshop-speaker-info p, .modal-speaker-info p {
     font-size: 12px;
     line-height: 16px;
   }
 
-  .workshop-info h1 {
+  .workshop-info h1, .modal-bio h1 {
     font-size: 12px;
     line-height: 24px;
   }
 
-  .workshop-info p {
+  .workshop-info p, .modal-bio p {
     font-size: 13px;
     line-height: 16px;
   }
