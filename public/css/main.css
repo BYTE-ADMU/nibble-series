@@ -652,7 +652,7 @@ p {
 }
 
 .munchies-wrapper {
-  width: 30%;
+  width: 26%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1205,7 +1205,7 @@ p {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
   .nav-btn, .workshop-time, .sign-up-btn {
     -webkit-appearance: none;
     -moz-appearance: button;
@@ -1490,7 +1490,7 @@ p {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .nav-btn, .workshop-time, .sign-up-btn {
     -webkit-appearance: none;
     -moz-appearance: button;
@@ -1776,7 +1776,7 @@ p {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1119px) {
   .nav-btn, .workshop-time, .sign-up-btn {
     -webkit-appearance: none;
     -moz-appearance: button;
@@ -2067,7 +2067,7 @@ p {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .nav-btn, .workshop-time, .sign-up-btn {
     -webkit-appearance: none;
     -moz-appearance: button;
@@ -2241,7 +2241,7 @@ p {
     }
     
     .hustler-workshop { 
-      background-image: url("../static/backgrounds/hustler-workshop-mobile.png");
+      background-image: url("../static/backgrounds/hustler-workshop.png");
       transform: translate(0, 0);
     }
   
