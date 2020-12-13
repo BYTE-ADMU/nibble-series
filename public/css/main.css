@@ -1129,11 +1129,35 @@ p {
   } 
   
   .munchies-container {
+    width: 85%;
     flex-direction: column;
   }
 
   .munchies-wrapper {
-    margin: 32px 0;
+    width: 100%;
+    margin: 24px 0;
+  }
+
+  .munchies-content {
+    width: 100%;
+  }
+  
+  .munchies-content h2 {
+    font-family: 'Objectivity Medium';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  
+  .munchies-content h1 {
+    font-size: 24px;
+    letter-spacing: 0em;
+    line-height: 40px;
+  }
+  
+  .munchies-content p {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .signup-landing {
@@ -1542,7 +1566,7 @@ p {
   
     .workshop-wrapper {
       flex-direction: column;
-      height: 60vh;
+      height: 90vh;
     }
   
     .workshop-content {
@@ -1685,13 +1709,12 @@ p {
     } 
     
     .munchies-container {
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
     }
   
     .munchies-wrapper {
-      width: 45%;
-      margin: 24px 0;
+      width: 64%;
+      margin: 40px 0;
     }
 
     .munchies-content h2 {
@@ -1701,7 +1724,7 @@ p {
     
     .munchies-content h1 {
       font-size: 32px;
-      line-height: 40px;
+      line-height: 48px;
     }
     
     .munchies-content p {
@@ -1754,12 +1777,591 @@ p {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .nav-btn, .workshop-time, .sign-up-btn {
+    -webkit-appearance: none;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+    .nav-btn, .workshop-time {
+      width: 160px;
+      height: 48px;
+    }
+  
+    .nav-link, .sign-up-link, .workshop-time {
+      font-size: 20px;
+    }
+    
+    .hero-vector {
+      background-image: url('../static/backgrounds/landing.png');
+      background-size: cover;
+      top: 0%;
+      left: 0%;
+    }
+  
+    .hero-landing {
+      height: 65vh;
+    }
+  
+    .hero-content {
+      width: 80%;
+    }
+  
+    .hero-logo {
+      margin: 0 0 40px 0;
+    }
+  
+    .hero-content img {
+      width: 480px;
+      height: 160px
+    }
+  
+    .hero-header {
+      font-size: 40px;
+    }
+    
+    .hero-sub {
+      font-size: 32px;
+    }
+    
+    .hero-body {
+      font-size: 28px;
+      line-height: 32px;  
+    }
+  
+    .hero-line {
+      width: 4px;
+      height: 156px;
+    }
+  
+    .workshop-day {
+      margin: 24px 0 0 0;
+    }
 
+    .workshop-day h1 { 
+      font-size: 40px; 
+    }
+    
+    .workshop-day h2 {
+      font-size: 32px;
+    }
+  
+    .workshop-wrapper {
+      flex-direction: column;
+      height: 60vh;
+    }
+  
+    .workshop-content {
+      flex-basis: 80%;
+    }
+    
+    .workshop-content-component {
+      width: 80%;
+      height: 100%;
+      justify-content: flex-end;
+      align-items: flex-start;
+      align-content: center;
+    }
+  
+    .hipster-mobile {
+      align-items: flex-end;
+    }
+    
+    .hipster-mobile .workshop-info {
+      align-items: flex-end;
+    }
+  
+    .hipster-mobile .workshop-info p {
+      text-align: right;
+    }
+  
+    .workshop-title {
+      margin: 32px 0;
+      font-size: 48px;
+    }
+  
+    .workshop-speaker {
+      margin: 0 0 48px 0;
+    }
+    
+    .workshop-speaker img {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .modal-content .modal-speaker img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+    }
+  
+    .workshop-speaker-info, .modal-speaker-info {
+      margin: 0 24px;
+    }
+  
+    .workshop-speaker-info h1, .modal-speaker-info h1 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+  
+    .workshop-speaker-info p, .modal-speaker-info p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .workshop-info h1, .modal-bio h1 {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  
+    .workshop-info p, .modal-bio p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .workshop-image {
+      position: absolute;
+      flex-basis: 40%;
+      width: 320px;
+      height: 400px;
+    }
+  
+    .hacker-workshop { 
+      background-image: url("../static/backgrounds/hacker-workshop.png");
+      right: 0%;
+      transform: translate(0%, -50%); 
+    }
+    
+    .hipster-workshop { 
+      background-image: url("../static/backgrounds/hipster-workshop-mobile.png");
+      left: 0%;
+      transform: translate(0%, -50%);  
+    }
+    
+    .hustler-workshop { 
+      background-image: url("../static/backgrounds/hustler-workshop-mobile.png");
+      right: 0%;
+      transform: translate(0%, -50%);  
+    }
+  
+    .workshop-day-2 {
+      margin: 32px 0 16px 0;
+    }
+  
+    .culmination-talk {
+      margin: 0 32px;
+      font-size: 20px;
+    }
+  
+    .culmination-container {
+      background: transparent;
+      height: 50vh;
+      width: 75%;
+    }
+  
+    .culmination-image {
+      display: flex;
+      background-image: url('../static/backgrounds/culminating-tablet.png');
+      width: 200px;
+      height: 310px;
+    }
+  
+    .munchies-landing {
+      margin-top: 24px;
+    }
+  
+    .munchies-line {
+      width: 80%;
+    }
+  
+    .munchies-header {
+      width: 90%;
+      margin-bottom: 32px;
+    }
+    
+    .munchies-header h1 {
+      font-size: 48px;
+      line-height: 64px;
+    }
+    
+    .munchies-header p {
+      width: 80%;
+      font-size: 28px;
+      line-height: 40px;
+    } 
+    
+    .munchies-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .munchies-wrapper {
+      width: 47.5%;
+      margin: 40px 0;
+    }
+
+    .munchies-content h2 {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    
+    .munchies-content h1 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    
+    .munchies-content p {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  
+    .signup-landing {
+      background-image: url('../static/backgrounds/sign-up-mobile.png');
+      height: 75vh;
+    }
+    
+    .signup-wrapper {
+      width: 90%;
+    }
+    
+    .signup-wrapper h1 {
+      margin-left: -40px;
+      width: 80%;
+      align-items: center;
+      text-align: center;
+      font-size: 72px;
+      line-height: 96px;
+    }
+    
+    .sign-up-btn {
+      width: 280px;
+      height: 64px;
+    }
+  
+    .sign-up-link {
+      padding: 4px 0 0 0;
+      font-size: 20px;
+    }
+  
+    .footer {
+      height: 200px;
+    }
+    
+    .footer-content h1 {
+      font-size: 16px;
+    }
+    
+    .footer-partners img {
+      margin: 8px 16px 8px 0px;
+      width: 80px;
+      height: 80px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .nav-btn, .workshop-time, .sign-up-btn {
+    -webkit-appearance: none;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+    .nav-btn, .workshop-time {
+      width: 160px;
+      height: 48px;
+    }
+  
+    .nav-link, .sign-up-link, .workshop-time {
+      font-size: 20px;
+    }
+    
+    .hero-vector {
+      background-image: url('../static/backgrounds/landing.png');
+      background-size: cover;
+      top: 0%;
+      left: 0%;
+    }
+  
+    .hero-landing {
+      height: 85vh;
+    }
+  
+    .hero-content {
+      width: 55%;
+    }
+  
+    .hero-logo {
+      margin: 0 0 48px 0;
+    }
+  
+    .hero-content img {
+      width: 600px;
+      height: 180px
+    }
+  
+    .hero-header {
+      font-size: 48px;
+    }
+    
+    .hero-sub {
+      font-size: 32px;
+    }
+    
+    .hero-body {
+      font-size: 24px;
+      line-height: 24px;  
+    }
+  
+    .hero-line {
+      width: 4px;
+      height: 124px;
+    }
+  
+    .workshop-day {
+      margin: 24px 0 0 0;
+    }
 
+    .workshop-day h1 { 
+      font-size: 40px; 
+    }
+    
+    .workshop-day h2 {
+      font-size: 32px;
+    }
+  
+    .workshop-wrapper {
+      flex-direction: row;
+      height: 100vh;
+    }
+  
+    .workshop-content {
+      flex-basis: 55%;
+    }
+    
+    .workshop-content-component {
+      width: 560px;
+      height: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: center;
+    }
+  
+    .hipster-mobile {
+      align-items: flex-start;
+    }
+    
+    .hipster-mobile .workshop-info {
+      align-items: flex-start;
+    }
+  
+    .hipster-mobile .workshop-info p {
+      text-align: left;
+    }
+  
+    .workshop-title {
+      margin: 32px 0;
+      font-size: 48px;
+    }
+  
+    .workshop-speaker {
+      margin: 0 0 48px 0;
+    }
+    
+    .workshop-speaker img {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .modal-content .modal-speaker img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+    }
+  
+    .workshop-speaker-info, .modal-speaker-info {
+      margin: 0 24px;
+    }
+  
+    .workshop-speaker-info h1, .modal-speaker-info h1 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+  
+    .workshop-speaker-info p, .modal-speaker-info p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .workshop-info h1, .modal-bio h1 {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  
+    .workshop-info p, .modal-bio p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .workshop-image {
+      position: relative;
+      flex-basis: 45%;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    .hacker-workshop { 
+      background-image: url("../static/backgrounds/hacker-workshop.png");
+      transform: translate(0, 0);
+    }
+    
+    .hipster-workshop { 
+      background-image: url("../static/backgrounds/hipster-workshop.png");
+      transform: translate(0, 0);
+    }
+    
+    .hustler-workshop { 
+      background-image: url("../static/backgrounds/hustler-workshop-mobile.png");
+      transform: translate(0, 0);
+    }
+  
+    .workshop-day-2 {
+      margin: 32px 0 16px 0;
+    }
+  
+    .culmination-talk {
+      margin: 0 32px;
+      font-size: 20px;
+    }
+  
+    .culmination-container {
+      background: url('../static/backgrounds/culminating.png');
+      height: 75vh;
+      width: 100%;
+    }
+  
+    .culmination-image {
+      display: none;
+      background-image: url('../static/backgrounds/culminating-tablet.png');
+      width: 200px;
+      height: 310px;
+    }
+  
+    .munchies-landing {
+      margin-top: 24px;
+    }
+  
+    .munchies-line {
+      width: 80%;
+    }
+  
+    .munchies-header {
+      width: 90%;
+      margin-bottom: 32px;
+    }
+    
+    .munchies-header h1 {
+      font-size: 48px;
+      line-height: 64px;
+    }
+    
+    .munchies-header p {
+      width: 80%;
+      font-size: 28px;
+      line-height: 40px;
+    } 
+    
+    .munchies-container {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+    }
+  
+    .munchies-wrapper {
+      width: 30%;
+      margin: 40px 0;
+    }
+
+    .munchies-content h2 {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    
+    .munchies-content h1 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    
+    .munchies-content p {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  
+    .signup-landing {
+      background-image: url('../static/backgrounds/sign-up.png');
+      height: 75vh;
+    }
+    
+    .signup-wrapper {
+      width: 75%;
+    }
+    
+    .signup-wrapper h1 {
+      margin-left: -40px;
+      width: 80%;
+      align-items: center;
+      text-align: center;
+      font-size: 72px;
+      line-height: 96px;
+    }
+    
+    .sign-up-btn {
+      width: 280px;
+      height: 64px;
+    }
+  
+    .sign-up-link {
+      padding: 4px 0 0 0;
+      font-size: 20px;
+    }
+  
+    .footer {
+      height: 200px;
+    }
+    
+    .footer-content h1 {
+      font-size: 16px;
+    }
+    
+    .footer-partners img {
+      margin: 8px 40px 8px 0px;
+      width: 80px;
+      height: 80px;
+    }
 }
 
 /*
