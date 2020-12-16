@@ -696,6 +696,15 @@ p {
   color: var(--primary-color);
 }
 
+.munchies-content a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.munchies-content a:hover {
+  color: black;
+}
+
 .munchies-content p {
   font-family: 'Objectivity Regular', sans-serif;
   font-size: 16px;
